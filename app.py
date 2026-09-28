@@ -222,6 +222,21 @@ hr { border-color: var(--border) !important; margin: 16px 0 !important; }
     gap: 10px; padding: 8px 0;
     color: var(--text-secondary); font-size: 13px;
 }
+
+/* Always show sidebar — hide collapse button */
+[data-testid="stSidebarCollapseButton"] {
+    display: none !important;
+}
+[data-testid="collapsedControl"] {
+    display: none !important;
+}
+section[data-testid="stSidebar"] {
+    min-width: 260px !important;
+    max-width: 260px !important;
+    transform: none !important;
+    visibility: visible !important;
+}
+
 .step-num {
     width: 20px; height: 20px;
     border-radius: 50%;
